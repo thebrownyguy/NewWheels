@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Wheals</title>
+    <link rel="icon" href="/img/tablogo3.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/morenews.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+ <!-- NavBar Section Starts -->
+  <nav class="container-fluid col-lg-12 pb-1 fixed-top shadow-sm" style="background-color: white;">
+    <div class="d-flex justify-content-between">
+      <div class="logo  col-lg-2 col-xs-4">
+            <a href="#">
+              <img src="/img/logo.png" width="240" height="60px">
+            </a>
+      </div>
+      <div class="toggle-btn my-auto ms-2 col-lg-6 col-xs-4">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="navMenu d-flex justify-content-end col-lg-9">
+        <a class="" href="/index.html">Home</a>
+        <a href="#">Car's</a>
+        <a href="/morenewsPG1.html">News</a>
+        <a href="/about.html">About</a>
+        <div class="dot"></div>
+      </div>
+         
+
+    </div>  
+    <div class="dropdown_menu bg-light">
+      <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#">Cars</a></li>
+          <li><a href="/morenewsPG1.html">News</a></li>
+          <li><a href="/about.html">About</a></li>
+      </ul>     
+    </div>      
+  </nav>
+
+
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle-btn')
+    const togglebtnIocn = document.querySelector('.toggle-btn i')
+    const dropdownMenu= document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function (){
+        dropdownMenu.classList.toggle('open')
+        const isOpen = dropdownMenu.classList.contains('open')
+
+        togglebtnIocn.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+  </script>
+
+  <!-- NavBar Section Ends -->
+
+<!-- detailed news section starts -->
+<h4 class="text-center heading">News</h4>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="shadow-lg col-lg-7 mx-auto col-sm-12 mt-4 p-4">
+      <h5>Upping The Coolness Quotient Quite Literally: Cars With Dual Zone Climate Control Under Rs 30 Lakh -</h5>
+      
+      <div class="col-xs-12 col-lg-10 mx-auto">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+         <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+          </div>
+  
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner mt-4 ">
+           <div class="carousel-item newscarsoul">
+              <img src="/img/acnwes1.avif" alt="Los Angeles" class="d-block">
+            </div>
+            <div class="carousel-item newscarsoul">
+              <img src="/img/acnews2.avif" alt="Chicago" class="d-block">
+            </div>
+            <div class="carousel-item newscarsoul">
+              <img src="/img//acnews3.webp" alt="New York" class="d-block">
+            </div>
+            <div class="carousel-item active newscarsoul">
+               <img src="/img//acnews4.avif" alt="Los Angeles" class="d-block">
+             </div>
+             <div class="carousel-item newscarsoul">
+               <img src="/img//acnews5.avif" alt="Chicago" class="d-block" >
+             </div>
+             <div class="carousel-item newscarsoul">
+               <img src="/img//acnews6.avif" alt="New York" class="d-block">
+             </div>
+          </div>
+  
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+           <span class="carousel-control-next-icon"></span>
+          </button>
+          </div>
+        </div>
+
+        <p class="mt-4">
+          Cars today are different from what they were a few decades ago. They are no longer mere means
+           to travel but are also one of the places where we spend most of our time. So to enhance the in-cabin
+            experience for occupants, carmakers have been making them more loaded than ever 
+            before, especially from mass-and Kia are a few his nifty bit of creature 
+             comfort:
+        </p>
+
+        <h5>2023 Kia Seltos -</h5>
+        <p>
+          Once launched, the new Seltos will become the first compact SUV in India to 
+          get dual-zone climate control. Kia is offering this luxury feature from the 
+          higher-spec HTX onwards for the updated SUV. It will also be the most affordable
+           car in the market to get dual-zone AC, possibly until the facelifted Hyundai 
+           Creta arrives.
+        </p>
+        <h5>Toyota Innova Hycross -</h5>
+        <p>
+          When Toyota launched the third-gen Innova towards the end of 2022 
+           also known as the Innova HyCross it surprised everyone with some unique
+            characteristics of the MPV and premium feature additions. One such inclusion
+             was of the dual-zone climate control, although it is reserved for the top-
+             spec ZX and ZX (O) Hybrid variants. Unlike other models on this list which of
+             fer dual-zone AC for the two individual front occupants, the convenience feat
+             ure on the Innova Hycross is rather split between the front and second row passe
+             ngers.
+        </p>
+        <h6 class="text-end"><b>-From Sources</b></h6>
+        <div class="text-center">
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den"><img src="/img/fb.png"></a>
+            <a href="https://www.instagram.com/"><img src="/img/ins.png"></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den"><img src="/img/git.png"></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den"><img src="/img/tw.png" width="39"></a>
+        </div>        
+
+    </div>
+
+    <div class="col-lg-4 col-sm-10 shadow-lg rounded mx-auto mt-4 mainheading">
+       <h4 class="mt-3 text-center">Main Headings</h4><hr>
+       
+       <a href="/News2.html">
+       <div class="extnews">
+           <div class="box-3 me-2 pb-2">
+               <img src="/img/snews1.jpg" alt="">
+           </div>
+           <div class="text ps-1">
+               <h6 class="mb-0"><b> ipsum dolor position.</b></h6>
+               <p>Lorem ipsum dolor sit, amet consect <br>etur adipisicing 
+                   elit. Architecto debitis ddc</p>
+           </div>
+        </div></a>
+       
+        <a href="/News2.html">
+        <div class="extnews">
+            <div class="box-3 me-2 pb-2">
+                <img src="/img/snews2.jpg" alt="">
+            </div>
+            <div class="text ps-1">
+                <h6 class="mb-0"><b>Lorem, ipsum dolor rim to top.</b></h6>
+                <p>Lorem ipsum dolor sit, amet consect <br>etur adipisicing 
+                    elit. Architecto debitis ddc</p>
+            </div>
+         </div></a>
+       
+         <a href="/News2.html">
+         <div class="extnews">
+             <div class="box-3 me-2 pb-2">
+                 <img src="/img/snews3.jpg" alt="">
+             </div>
+             <div class="text ps-1">
+                 <h6 class="mb-0"><b>possible Lorem, ipsum dolor.</b></h6>
+                 <p>Lorem ipsum dolor sit, amet consect <br>etur adipisicing 
+                     elit. Architecto debitis ddc</p>
+             </div>
+          </div></a>
+       
+          <a href="/News2.html">
+          <div class="extnews">
+              <div class="box-3 me-2 pb-2">
+                  <img src="/img/snews2.jpg" alt="">
+              </div>
+              <div class="text ps-1">
+                  <h6 class="mb-0"><b>commonly Lorem, ipsum dolor.</b></h6>
+                  <p>Lorem ipsum dolor sit, amet consect <br>etur adipisicing 
+                      elit. Architecto debitis ddc</p>
+              </div>
+           </div></a>
+       
+           <a href="/News2.html">
+           <div class="extnews">
+               <div class="box-3 me-2 pb-2">
+                   <img src="/img/snews5.jpg" alt="">
+               </div>
+               <div class="text ps-1">
+                   <h6 class="mb-0"><b>Delhi Lorem, ipsum dolor.</b></h6>
+                   <p>Lorem ipsum dolor sit, amet consect <br>etur adipisicing 
+                       elit. Architecto debitis ddc</p>
+               </div>
+            </div></a>
+       
+            <a href="/News2.html">
+            <div class="extnews">
+                <div class="box-3 me-2 pb-2">
+                    <img src="/img/snews6.jpg" alt="">
+                </div>
+                <div class="text ps-1">
+                    <h6 class="mb-0"><b>Dwarka Lorem, ipsum dolor tyres.</b></h6>
+                    <p>Lorem ipsum dolor sit, amet consect <br>etur adipisicing 
+                        elit. Architecto debitis ddc</p>
+                </div>
+             </div></a>
+       
+             <a href="/News2.html">
+             <div class="extnews">
+                 <div class="box-3 me-2 pb-2">
+                     <img src="/img/snews7.jpg" alt="">
+                 </div>
+                 <div class="text ps-1">
+                     <h6 class="mb-0"><b>haryana Lorem, ipsum dolor.</b></h6>
+                     <p>Lorem ipsum dolor sit, amet consect <br>etur adipisicing 
+                         elit. Architecto debitis ddc</p>
+                 </div>
+              </div></a>
+       
+              <a href="/News2.html">
+              <div class="extnews">
+                  <div class="box-3 me-2 pb-2">
+                      <img src="/img/snews8.jpg" alt="">
+                  </div>
+                  <div class="text ps-1">
+                      <h6 class="mb-0"><b>Lorem, ipsum d.</b></h6>
+                      <p>Lorem ipsum dolor sit, amet consect <br>etur adipisicing 
+                          elit. Architecto debitis ddc</p>
+                  </div>
+               </div></a>
+       
+               <a href="/News2.html">
+               <div class="extnews">
+                   <div class="box-3 me-2 pb-2">
+                       <img src="/img/snews9.jpg" alt="">
+                   </div>
+                   <div class="text ps-1">
+                       <h6 class="mb-0"><b>compleatky Lorem, ipsum dolor.</b></h6>
+                       <p>Lorem ipsum dolor sit, amet consect <br>etur adipisicing 
+                           elit. Architecto debitis ddc</p>
+                   </div>
+                </div></a>
+ 
+    </div>
+
+  </div>
+</div>
+
+<!-- detailed news section Ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h4 class="heading">Demo</h4><hr> -->
+  
+<!-- faltu -->
+<!-- <br><br><br><div class="bg-success"  style="height: 1500px;width: 400px;"></div> -->
+<!-- <div class="bg-primary"  style="height: 1500px;width: 400px;"></div>   -->
+<!-- faltu -->
+
+<!-- Footer section Starts --><hr class="mt-5">
+<div class="row col-lg-12 mt-5">
+  <div class="col-lg-3 box-1">
+      <div class="box-2">
+          <img src="/img/trusted.png" alt="">
+      </div>
+      <div class="text ps-1">
+          <h4 class="mb-0">100% Trusted</h4>
+          <p>Our News's Are Always Accurate <br> And Come's from trusted Sources loermmm</p>
+      </div>
+  </div>
+  <div class="col-lg-3 box-1">
+      <div class="box-2">
+          <img src="/img/locked.png" alt="">
+      </div>
+      <div class="text ps-1">
+          <h4 class="mb-0">100% Secure</h4>
+          <p>Our Website is Certified by Top End <br> Developer Team
+              and it's Compleatly Secure
+          </p>
+      </div>
+  </div>
+  <div class="col-lg-3 box-1">
+      <div class="box-2">
+          <img src="/img/security.png" alt="">
+      </div>
+      <div class="text ps-1">
+          <h4 class="mb-0">100% Safe</h4>
+          <p>We Keep Your Data Private <br> Lorem ipsum dolor sit amet consecr ametr.</p>
+      </div>
+  </div>
+  <div class="col-lg-3 box-1">
+      <div class="box-2">
+          <img src="/img/fast.png" alt="">
+      </div>
+      <div class="text ps-1">
+          <h4 class="mb-0">100% Fast</h4>
+          <p>Lorem ipsum dolor sit, amet consect <br>etur adipisicing 
+              elit. Architecto debitis ddc</p>
+      </div>
+  </div>
+</div>
+
+<footer>
+  <div class="row px-3 pt-3" style=" background-color: aliceblue;">
+      <div class="col-lg-3 listt">            
+          <ul>
+              <th><a class="text-center" href="/Workprogress.html"><h5>More Services</h5></a></th><hr>
+              <li><a href="/Workprogress.html"><p>Insurance's</p></a></li>
+              <li><a href="/Workprogress.html"><p>Car Modification</p></a></li>
+              <li><a href="/Workprogress.html"><p>Car Maintainance</p></a></li>
+              <li><a href="/Workprogress.html"><p>Vehicle Finance</p></a></li>
+              <li><a href="/Workprogress.html"><p>Vehicle Registration</p></a></li>
+          </ul>
+      </div>
+
+      <div class="col-lg-3 listt">            
+          <ul>
+              <th><a class="text-center" href="/Workprogress.html"><h5>Support</h5></a></th><hr>
+              <li><a href="/Workprogress.html"><p>Legal Policy</p></a></li>
+              <li><a href="/Workprogress.html"><p>Status Policy</p></a></li>
+              <li><a href="/Workprogress.html"><p>Privacy Policy</p></a></li>
+              <li><a href="/Workprogress.html"><p>Terms & Conditiond</p></a></li>
+          </ul>
+      </div>
+
+      <div class="col-lg-3 listt">            
+          <ul>
+              <th><a class="text-center" href="/Workprogress.html"><h5>About Us</h5></a></th><hr>
+              <li><a href="/Workprogress.html"><p>Blogs</p></a></li>
+              <li><a href="/Workprogress.html"><p>Answers</p></a></li>
+              <li><a href="/Workprogress.html"><p>Reach Us</p></a></li>
+              <li><a href="/Workprogress.html"><p>Our Team</p></a></li>
+              <li><a href="/Workprogress.html"><p>Way of Work!</p></a></li>
+          </ul>
+      </div>
+
+      <div class="col-lg-3 listt fttext">
+          <a href="/index.html">
+              <img src="/img/footerCAR.png" height="170">
+          </a>
+          <div>
+              <h5 class="m-0">Social</h5><hr class="mx-auto mb-2" style="width: 50%;">
+              <a href="https://github.com/"><img src="/img/git.png"></a>
+              <a href="https://www.google.com/"><img src="/img/googel.png" width="43"></a>
+              <a href="https://twitter.com/"><img src="/img/tw.png" width="38"></a>
+              <a href="https://www.instagram.com/"><img src="/img/ins.png" width="32"></a>
+          </div>
+      </div>
+      
+      <hr class="m-0">
+        <div class="col-lg-12 fttext" style="height: 43px;line-height: 38px; background-color: aliceblue;">
+             <p>Since 2021-2023 | All Rigth's Reserved By ABC</p>
+        </div>
+      <!-- <hr class="m-0"> -->
+
+  </div>
+</footer>
+
+</body>
+</html>

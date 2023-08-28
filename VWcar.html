@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Wheals</title>
+    <link rel="icon" href="/img/tablogo3.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/Carinfo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+ <!-- NavBar Section Starts -->
+  <nav class="container-fluid col-lg-12 pb-1 fixed-top shadow-sm" style="background-color: white;">
+    <div class="d-flex justify-content-between">
+      <div class="logo  col-lg-2 col-xs-4">
+            <a href="#">
+              <img src="/img/logo.png" width="240" height="60px">
+            </a>
+      </div>
+      <div class="toggle-btn my-auto ms-2 col-lg-6 col-xs-4">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="navMenu d-flex justify-content-end col-lg-9">
+        <a class="" href="/index.html">Home</a>
+        <a href="#">Car's</a>
+        <a href="/morenewsPG1.html">News</a>
+        <a href="/about.html">About</a>
+        <div class="dot"></div>
+      </div>
+         
+
+    </div>  
+    <div class="dropdown_menu bg-light">
+      <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#">Cars</a></li>
+          <li><a href="/morenewsPG1.html">News</a></li>
+          <li><a href="/about.html">About</a></li>
+      </ul>     
+    </div>      
+  </nav>
+
+
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle-btn')
+    const togglebtnIocn = document.querySelector('.toggle-btn i')
+    const dropdownMenu= document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function (){
+        dropdownMenu.classList.toggle('open')
+        const isOpen = dropdownMenu.classList.contains('open')
+
+        togglebtnIocn.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+  </script>
+
+  <!-- NavBar Section Ends -->
+
+     <!-- Upcoming Section Starts -->
+
+    <div class="row Upcoming col-xs-12 col-lg-12 p-3">
+
+      <div class="col-xs-12 col-lg-6">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+         <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+          </div>
+  
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner rounded ">
+           <div class="carousel-item">
+              <img src="/img/Acars/V1.avif" alt="Los Angeles" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/Acars/v2.avif" alt="Chicago" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/Acars/v3.avif" alt="New York" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item active">
+               <img src="/img/Acars/v4.avif" alt="Los Angeles" class="d-block" style="width:100%">
+             </div>
+             <div class="carousel-item">
+               <img src="/img/Acars/v5.avif" alt="Chicago" class="d-block" style="width:100%">
+             </div>
+             <div class="carousel-item">
+               <img src="/img/Acars/v6.avif" alt="New York" class="d-block" style="width:100%">
+             </div>
+          </div>
+  
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+           <span class="carousel-control-next-icon"></span>
+          </button>
+          </div>
+        </div>
+
+        
+      <div class="col-xs-12 col-lg-6">
+        <div class="mx-auto p-4 my-auto shadow-lg rounded infotext">
+          <h2 class="text-start m-0">Volkswagen </h2>
+         <h1>Virtus GT DSG</h1>
+         <!-- <h6 class="text-start">"Newly Announced"</h6> -->
+         <p class="text-center">Volkswagen Virtus GT DSG Prices: The price of the Volkswagen Virtus GT DSG <br>
+           in New Delhi is Rs 16.20 Lakh (Ex-showroom). To know more about the Virtus GT DSG <br> Images, Reviews,
+            Offers & other details, download the CarDekho App.Volkswagen Virtus GT DSG mileage : It returns a certified mileage of 18.67 kmpl.
+         </p>
+         <hr>
+         <h5 class="text-center">What are the specifications of Volkswagen Virtus GT DSG?</h5>
+         <p>The specifications of Volkswagen Virtus GT DSG are 18.67 kmpl 
+          ARAI Mileage,Petrol Fuel Type,1498 Engine Displacement (cc),4 No. 
+          of cylinder,147.51bhp@5000-6000rpm Max Power.</p>
+          <h5 class="text-center">What is the mileage of Volkswagen Virtus GT DSG?</h5>
+          <p>The mileage of Volkswagen Virtus GT DSG is 18.67 kmpl. Check mileage of Volkswagen 
+            Virtus And he Volkswagen Virtus GT DSG is a variant of Volkswagen Virtus. 
+            The on-road price of Volkswagen Virtus GT DSG is 18,70,460.</p>
+          
+         </div>
+        </div>
+       </div>
+    </div>
+
+    <div class="container text-center spextext my-5 py-5 ">
+      <div class="d-flex ">  
+        <div class="p-2 flex-fill">
+          <a href="#"><img src="/img/fuel.png" width="29" alt="Fuel Icon" /></a>
+          <h6>Fuel</h6>
+          <p>Petrol</p>
+        </div>
+        <div class="p-2 flex-fill">
+          <a href="#"><img src="/img/engine.png" width="31" alt="Fuel Icon" /></a>
+          <h6>Engine</h6>
+          <p>6600 CC</p>
+        </div>
+        <div class="p-2 flex-fill">
+          <img src="/img/bhp.png" width="27" alt="Fuel Icon" /></a>
+          <h6>BHP</h6>
+          <p>715.15 Bhp</p>
+        </div>
+        <div class="p-2 flex-fill">
+          <a href="#"><img src="/img/milage.png" width="33" alt="Fuel Icon" /></a>
+          <h6>Milage</h6>
+          <p>Petrol</p>
+        </div>
+        <div class="p-2 flex-fill">
+          <a href="#"><img src="/img/airbag.png" width="30" alt="Fuel Icon" /></a>
+          <h6>Air Bags</h6>
+          <p>5 Airbags</p>
+        </div>
+        <div class="p-2 flex-fill">
+          <img src="/img/transmission.png" width="29" alt="Fuel Icon" /></a>
+          <h6>Transmission</h6>
+          <p>Manual/Automatic</p>
+        </div>
+      </div>
+</div>
+
+<div class="container my-3">
+  <div class="row">
+  <div class="shadow-lg col-lg-7 mx-auto col-sm-12 mt-4 p-4">
+    <h4 class="text-center mt-3">More Updates</h4><hr>
+    <p><b>Volkswagen Virtus GT DSG Prices: </b> The price of the Volkswagen Virtus GT DSG in New Delhi is Rs 16.20 Lakh (Ex-showroom). To know more about the Virtus GT DSG Images, Reviews, Offers & other, download the CarDekho App. <br>
+      <b>Volkswagen Virtus GT DSG mileage :</b> It returns a certified mileage of 18.67 kmpl.    
+      <br><b>Volkswagen Virtus GT DSG Colours:</b> This variant is available in colours: .
+      
+      <br><b>Volkswagen Virtus GT DSG Engine and Transmission:</b> It is powered by a 1498 cc engine which is available with a Automatic transmission. The 1498 cc engine puts out 147.51bhp@5000-6000rpm of power and 250Nm@1600-3500rpm of torque.
+      
+      <br><b>Volkswagen Virtus GT DSG vs similarly priced variants of competitors:</b> In this price range, you may also consider
+      Skoda Slavia 1.5 TSI Ambition AT, which is priced at Rs.16.24 Lakh. Hyundai Verna SX Opt IVT, which is priced at Rs.16.20 Lakh and Honda City ZX CVT, which is priced at Rs.16.05 Lakh.
+      
+      <br><b>Virtus GT DSG Specs & Features:</b> Volkswagen Virtus GT DSG is a 5 seater Petrol car. Virtus GT DSG has Multi-function Steering Wheel,Power Adjustable Exterior Rear View Mirror,Touch Screen,Automatic Climate Control,Engine Start Stop Button,Anti Lock Braking System,Alloy Wheels,Fog Lights - Front,Fog Lights - Rear,Power Windows Rear</p>
+  </div>
+  <div class="col-lg-4 col-sm-10 shadow-lg rounded mx-auto mt-4">
+    <h5 class="text-center mt-3">Specifications & Features</h5><hr>
+    <table>
+      <tr>
+        <th>Engine Type -</th>
+        <td>	1.5L TSI EVO with ACT</td>
+      </tr>
+      <tr>
+        <th>Displacement (cc) -</th>
+        <td>1498</td>
+      </tr>
+      <tr>
+        <th>Max Power -</th>
+        <td>147.51bhp@5000-6000rpm</td>
+      </tr>
+      <tr>
+        <th>Max Torque -</th>
+        <td>250Nm@1600-3500rpm</td>
+      </tr>
+      <tr>
+        <th>No. of cylinder -</th>
+        <td>Four</td>
+      </tr>
+      <tr>
+        <th>Valves Per Cylinder -</th>
+        <td>Four</td>
+      </tr>
+      <tr>
+        <th>Turbo Charger -</th>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <th>Transmission Type -</th>
+        <td>Automatic</td>
+      </tr>
+      <tr>
+        <th>Gear Box -</th>
+        <td>	7-Speed DSG</td>
+      </tr>
+      <tr>
+        <th>Rear Suspension -</th>
+        <td>Twist beam axle</td>
+      </tr>
+      <tr>
+        <th>Night Rear Mirror -</th>
+        <td>Auto</td>
+      </tr>
+
+    </table>
+  </div>
+  </div>
+</div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h4 class="heading">Demo</h4><hr> -->
+  
+<!-- faltu -->
+<!-- <br><br><br><div class="bg-success"  style="height: 1500px;width: 400px;"></div> -->
+<!-- <div class="bg-primary"  style="height: 1500px;width: 400px;"></div>   -->
+<!-- faltu -->
+
+<!-- Footer section Starts --><hr class="mt-5">
+<div class="row col-lg-12">
+    <div class="col-lg-3 box-1">
+        <div class="box-2">
+            <img src="/img/trusted.png" alt="">
+        </div>
+        <div class="text ps-1">
+            <h4 class="mb-0">100% Trusted</h4>
+            <p>Our News's Are Always Accurate <br> And Come's from trusted Sources loermmm</p>
+        </div>
+    </div>
+    <div class="col-lg-3 box-1">
+        <div class="box-2">
+            <img src="/img/locked.png" alt="">
+        </div>
+        <div class="text ps-1">
+            <h4 class="mb-0">100% Secure</h4>
+            <p>Our Website is Certified by Top End <br> Developer Team
+                and it's Compleatly Secure
+            </p>
+        </div>
+    </div>
+    <div class="col-lg-3 box-1">
+        <div class="box-2">
+            <img src="/img/security.png" alt="">
+        </div>
+        <div class="text ps-1">
+            <h4 class="mb-0">100% Safe</h4>
+            <p>We Keep Your Data Private <br> Lorem ipsum dolor sit amet consecr ametr.</p>
+        </div>
+    </div>
+    <div class="col-lg-3 box-1">
+        <div class="box-2">
+            <img src="/img/fast.png" alt="">
+        </div>
+        <div class="text ps-1">
+            <h4 class="mb-0">100% Fast</h4>
+            <p>Lorem ipsum dolor sit, amet consect <br>etur adipisicing 
+                elit. Architecto debitis ddc</p>
+        </div>
+    </div>
+  </div>
+  
+
+<footer>
+  <div class="row px-3 pt-3" style=" background-color: aliceblue;">
+      <div class="col-lg-3 listt">            
+          <ul>
+              <th><a class="text-center" href="/Workprogress.html"><h5>More Services</h5></a></th><hr>
+              <li><a href="/Workprogress.html"><p>Insurance's</p></a></li>
+              <li><a href="/Workprogress.html"><p>Car Modification</p></a></li>
+              <li><a href="/Workprogress.html"><p>Car Maintainance</p></a></li>
+              <li><a href="/Workprogress.html"><p>Vehicle Finance</p></a></li>
+              <li><a href="/Workprogress.html"><p>Vehicle Registration</p></a></li>
+          </ul>
+      </div>
+
+      <div class="col-lg-3 listt">            
+          <ul>
+              <th><a class="text-center" href="/Workprogress.html"><h5>Support</h5></a></th><hr>
+              <li><a href="/Workprogress.html"><p>Legal Policy</p></a></li>
+              <li><a href="/Workprogress.html"><p>Status Policy</p></a></li>
+              <li><a href="/Workprogress.html"><p>Privacy Policy</p></a></li>
+              <li><a href="/Workprogress.html"><p>Terms & Conditiond</p></a></li>
+          </ul>
+      </div>
+
+      <div class="col-lg-3 listt">            
+          <ul>
+              <th><a class="text-center" href="/Workprogress.html"><h5>About Us</h5></a></th><hr>
+              <li><a href="/Workprogress.html"><p>Blogs</p></a></li>
+              <li><a href="/Workprogress.html"><p>Answers</p></a></li>
+              <li><a href="/Workprogress.html"><p>Reach Us</p></a></li>
+              <li><a href="/Workprogress.html"><p>Our Team</p></a></li>
+              <li><a href="/Workprogress.html"><p>Way of Work!</p></a></li>
+          </ul>
+      </div>
+
+      <div class="col-lg-3 listt fttext">
+          <a href="/index.html">
+              <img src="/img/footerCAR.png" height="170">
+          </a>
+          <div>
+              <h5 class="m-0">Social</h5><hr class="mx-auto mb-2" style="width: 50%;">
+              <a href="https://github.com/"><img src="/img/git.png"></a>
+              <a href="https://www.google.com/"><img src="/img/googel.png" width="43"></a>
+              <a href="https://twitter.com/"><img src="/img/tw.png" width="38"></a>
+              <a href="https://www.instagram.com/"><img src="/img/ins.png" width="32"></a>
+          </div>
+      </div>
+      
+      <hr class="m-0">
+        <div class="col-lg-12 fttext" style="height: 43px;line-height: 38px; background-color: aliceblue;">
+             <p>Since 2021-2023 | All Rigth's Reserved By ABC</p>
+        </div>
+      <!-- <hr class="m-0"> -->
+
+  </div>
+</footer>
+
+</body>
+</html>

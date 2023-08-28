@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Wheals</title>
+    <link rel="icon" href="/img/tablogo3.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+ <!-- NavBar Section Starts -->
+  <nav class="container-fluid col-lg-12 pb-1 fixed-top shadow-sm" style="background-color: white;">
+    <div class="d-flex justify-content-between">
+      <div class="logo  col-lg-2 col-xs-4">
+            <a href="#">
+              <img src="/img/logo.png" width="240" height="60px">
+            </a>
+      </div>
+      <div class="toggle-btn my-auto ms-2 col-lg-6 col-xs-4">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="navMenu d-flex justify-content-end col-lg-9">
+        <a class="" href="/index.html">Home</a>
+        <a href="/CarsPG1.html">Car's</a>
+        <a href="/morenewsPG1.html">News</a>
+        <a href="/about.html">About</a>
+        <div class="dot"></div>
+      </div>
+         
+
+    </div>  
+    <div class="dropdown_menu bg-light">
+      <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/CarsPG1.html">Cars</a></li>
+          <li><a href="/morenewsPG1.html">News</a></li>
+          <li><a href="/about.html">About</a></li>
+      </ul>     
+    </div>      
+  </nav>
+
+
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle-btn')
+    const togglebtnIocn = document.querySelector('.toggle-btn i')
+    const dropdownMenu= document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function (){
+        dropdownMenu.classList.toggle('open')
+        const isOpen = dropdownMenu.classList.contains('open')
+
+        togglebtnIocn.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+  </script>
+
+  <!-- NavBar Section Ends -->
+
+<div class="container heading text-center">
+  <h3>Upcoming Services In Process</h3>
+  <a href="/index.html"><img src="/img/maintanance.png" alt=""></a>
+  <h6 class="text-end"><b>- Click On Image to Go Back !</b></h6>
+
+</div>
+
+<!-- Footer section Starts --><hr class="mt-5">
+<div class="row col-lg-12">
+  <div class="col-lg-3 box-1">
+      <div class="box-2">
+          <img src="/img/trusted.png" alt="">
+      </div>
+      <div class="text ps-1">
+          <h4 class="mb-0">100% Trusted</h4>
+          <p>Our News's Are Always Accurate <br> And Come's from trusted Sources loermmm</p>
+      </div>
+  </div>
+  <div class="col-lg-3 box-1">
+      <div class="box-2">
+          <img src="/img/locked.png" alt="">
+      </div>
+      <div class="text ps-1">
+          <h4 class="mb-0">100% Secure</h4>
+          <p>Our Website is Certified by Top End <br> Developer Team
+              and it's Compleatly Secure
+          </p>
+      </div>
+  </div>
+  <div class="col-lg-3 box-1">
+      <div class="box-2">
+          <img src="/img/security.png" alt="">
+      </div>
+      <div class="text ps-1">
+          <h4 class="mb-0">100% Safe</h4>
+          <p>We Keep Your Data Private <br> Lorem ipsum dolor sit amet consecr ametr.</p>
+      </div>
+  </div>
+  <div class="col-lg-3 box-1">
+      <div class="box-2">
+          <img src="/img/fast.png" alt="">
+      </div>
+      <div class="text ps-1">
+          <h4 class="mb-0">100% Fast</h4>
+          <p>Lorem ipsum dolor sit, amet consect <br>etur adipisicing 
+              elit. Architecto debitis ddc</p>
+      </div>
+  </div>
+</div>
+
+<footer>
+  <div class="row px-3 pt-3" style=" background-color: aliceblue;">
+      <div class="col-lg-3 listt">            
+          <ul>
+              <th><a class="text-center" href="/Workprogress.html"><h5>More Services</h5></a></th><hr>
+              <li><a href="/Workprogress.html"><p>Insurance's</p></a></li>
+              <li><a href="/Workprogress.html"><p>Car Modification</p></a></li>
+              <li><a href="/Workprogress.html"><p>Car Maintainance</p></a></li>
+              <li><a href="/Workprogress.html"><p>Vehicle Finance</p></a></li>
+              <li><a href="/Workprogress.html"><p>Vehicle Registration</p></a></li>
+          </ul>
+      </div>
+
+      <div class="col-lg-3 listt">            
+          <ul>
+              <th><a class="text-center" href="/Workprogress.html"><h5>Support</h5></a></th><hr>
+              <li><a href="/Workprogress.html"><p>Legal Policy</p></a></li>
+              <li><a href="/Workprogress.html"><p>Status Policy</p></a></li>
+              <li><a href="/Workprogress.html"><p>Privacy Policy</p></a></li>
+              <li><a href="/Workprogress.html"><p>Terms & Conditiond</p></a></li>
+          </ul>
+      </div>
+
+      <div class="col-lg-3 listt">            
+          <ul>
+              <th><a class="text-center" href="/Workprogress.html"><h5>About Us</h5></a></th><hr>
+              <li><a href="/Workprogress.html"><p>Blogs</p></a></li>
+              <li><a href="/Workprogress.html"><p>Answers</p></a></li>
+              <li><a href="/Workprogress.html"><p>Reach Us</p></a></li>
+              <li><a href="/Workprogress.html"><p>Our Team</p></a></li>
+              <li><a href="/Workprogress.html"><p>Way of Work!</p></a></li>
+          </ul>
+      </div>
+
+      <div class="col-lg-3 listt fttext">
+          <a href="/index.html">
+              <img src="/img/footerCAR.png" height="170">
+          </a>
+          <div>
+              <h5 class="m-0">Social</h5><hr class="mx-auto mb-2" style="width: 50%;">
+              <a href="https://github.com/"><img src="/img/git.png"></a>
+              <a href="https://www.google.com/"><img src="/img/googel.png" width="43"></a>
+              <a href="https://twitter.com/"><img src="/img/tw.png" width="38"></a>
+              <a href="https://www.instagram.com/"><img src="/img/ins.png" width="32"></a>
+          </div>
+      </div>
+      
+      <hr class="m-0">
+        <div class="col-lg-12 fttext" style="height: 43px;line-height: 38px; background-color: aliceblue;">
+             <p>Since 2021-2023 | All Rigth's Reserved By ABC</p>
+        </div>
+      <!-- <hr class="m-0"> -->
+
+  </div>
+</footer>
+
+</body>
+</html>

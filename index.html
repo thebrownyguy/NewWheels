@@ -3,157 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Wheels</title>
+    <title>New Wheals</title>
     <link rel="icon" href="/img/tablogo3.png">
-    <!-- <link rel="stylesheet" href="/css/style.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-<style>
-*{
-   padding: 0px;
-   margin: 0px;   
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .navMenu{
-      display: none !important;
-    }
-  }
-
-/* NavBar Starts  */
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.logo{
-    height: 65px;
-    width: 248px;
-    text-align: center;
-}
-
-.logo img{
-    /* width: 100% !important; */
-    /* height: 100% !important; */
-}
-
-.navMenu a {
-  line-height: 61px;
-  color: #5b605edc;
-  text-decoration: none;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-left: 25px;
-  /* width: auto; */
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.navMenu a:hover {
-  color: #908448;
-}
-
-.navMenu .dot {
-  width: 65px;
-  height: 5px;
-  margin-top: 47px;
-  background: #f9d10d;
-  border-radius: 5px;
-  opacity: 1 ;
-  -webkit-transform: translateX(-298px);
-  transform: translateX(-298px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-/* .navMenu a:nth-child(1):hover ~ .dot {
-  -webkit-transform: translateX(-298px);
-  transform: translateX(-298px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-} */
-
-.navMenu a:nth-child(2):hover ~ .dot {
-  -webkit-transform: translateX(-222px);
-  transform: translateX(-222px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(3):hover ~ .dot {
-  /* width: 100px; */
-  -webkit-transform: translateX(-145px);
-  transform: translateX(-145px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(4):hover ~ .dot {
-  -webkit-transform: translateX(-65px);
-  transform: translateX(-65px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-  /* width: 72px; */
-}
-
-/* NavBar Ends */
-
-/* Upcoming Section starts */
-.spextext{
-    line-height: 10px;
-}
-
-.spextext h6{
-   color: gray;
-   font-size: 13px;
-}
-/* Upcomin Section ends */
-</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
   <!-- NavBar Section Starts -->
-    <nav class="container-fluid col-lg-12 pb-1 shadow-sm">
-      <div class="row">
-        <span class="logo ms-2 col-xs-6 col-lg-2">
-         <a href="#">
-          <img src="/img/logo.png" alt="logo" width="240" height="60px">
-        </a>
-        </span>
-      
-        <div class="navMenu d-flex justify-content-end col-lg-10">
-          <a class="" href="#">Home</a>
-          <a href="#">Blog</a>
-          <a href="#">Work</a>
-          <a href="#">About</a>
-          <div class="dot"></div>
-        </div>
-      </div>        
-    </nav>
+<header>
+<nav class="container-fluid col-lg-12 pb-1 fixed-top shadow-sm" style="background-color: white;">
+  <div class="d-flex justify-content-between">
+    <div class="logo  col-lg-2 col-xs-4">
+          <a href="#">
+            <img src="/img/logo.png" width="240" height="60px">
+          </a>
+    </div>
+    <div class="toggle-btn my-auto ms-2 col-lg-6 col-xs-4">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="navMenu d-flex justify-content-end col-lg-9">
+      <a class="" href="/index.html">Home</a>
+      <a href="/CarsPG1.html">Car's</a>
+      <a href="/morenewsPG1.html">News</a>
+      <a href="/about.html">About</a>
+      <div class="dot"></div>
+    </div>
+       
 
-    <!-- NavBar Section Ends --> <br><br>
+  </div>  
+  <div class="dropdown_menu bg-light">
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/CarsPG1.html">Cars</a></li>
+        <li><a href="/morenewsPG1.html">News</a></li>
+        <li><a href="/about.html">About</a></li>
+    </ul>     
+  </div>      
+</nav>
+
+
+
+<script>
+  const toggleBtn = document.querySelector('.toggle-btn')
+  const togglebtnIocn = document.querySelector('.toggle-btn i')
+  const dropdownMenu= document.querySelector('.dropdown_menu')
+
+  toggleBtn.onclick = function (){
+      dropdownMenu.classList.toggle('open')
+      const isOpen = dropdownMenu.classList.contains('open')
+
+      togglebtnIocn.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+  }
+</script>
+
+</header>
+<!-- NavBar Section Ends -->
 
     <!-- Upcoming Section Starts -->
 
-    <div class="fearured row col-xs-12 col-lg-12 p-3">
+    <div class="row Upcoming col-xs-12 col-lg-12 p-3">
 
       <div class="col-xs-12 col-lg-6">
        <div class="mx-auto p-4 shadow-lg rounded">
         <h1 class="text-start" >Ferrari <br> Purosangue</h1>
-        <h6 class="">"Newly Announced"</h6>
+        <h6 class="text-sta">"Newly Announced"</h6>
         <p class="text-start">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, impedit, quos, nisi magni nesciunt iste sit
            facilis omnis molestias error ad ea architecto saepe eaque minus! A at accusamus, quia, tempora in nemo aspernatur
@@ -216,12 +135,1133 @@
           </div>
         </div>
     </div>
-
-<!-- upcoming section ends -->
-
-    <!-- faltu --><br><br><br><br>
-    <div style="height: 900px; width: 100px;border: 1px solid green;"></div>
-    <!-- faltu -->
     
+
+<!-- Car Brands -->
+<div class="container my-4 my-5 py-2">
+  <div class="row brands justify-content-center">
+       <a class="col-lg-2" href="/CarsPG2.html"><img src="/img/brands/mercedes-benz-logo.png"></a>
+       <a class="col-lg-2" href="/CarsPG2.html"><img src="/img/brands/bmw-m-logo.png"></a>
+       <a class="col-lg-2" href="/CarsPG2.html"><img src="/img/brands/fiat-logo.png"></a>
+       <a class="col-lg-2" href="/CarsPG2.html"><img src="/img/brands/ford-mustang-logo.png"></a>
+       <a class="col-lg-2" href="/CarsPG2.html"><img src="/img/brands/jeep-logo.png"></a>
+       <a class="col-lg-2" href="/CarsPG2.html"><img src="/img/brands/jaguar-logo.png"></a>
+  </div> <br>
+  <div class="row brands justify-content-center">
+    <a class="col-lg-2" href="/CarsPG2.html"><img src="/img/brands/ferrari-logo.png"></a>
+    <a class="col-lg-2" href="/CarsPG2.html"><img src="/img/brands/mclaren-logo.png"></a>
+    <a class="col-lg-2" href="/CarsPG2.html"><img src="/img/brands/rolls-royce-logo.png"></a>
+    <a class="col-lg-2" href="/CarsPG2.html"><img src="/img/brands/maserati-logo.png"></a>
+    <a class="col-lg-2" href="/CarsPG2.html"><img src="/img/brands/renault-logo.png" ></a>
+    <a class="col-lg-2" href="/CarsPG2.html"><img src="/img/brands/mazda-logo.png"></a>
+    <a class="col-lg-2" href="/CarsPG2.html"><img src="/img/brands/ram-logo.png"></a>
+    <a class="col-lg-2" href="/CarsPG2.html"><img src="/img/brands/bentley-logo.png"></a>
+</div>
+
+</div>
+
+<!-- Car Brands Ends-->
+
+<!-- Trending Cars -->
+<div class="container-fluid py-3 px-5 mt-4 ">
+  <div class="row rounded-top" style="height: 45px;background-color: #ededed;">
+    <h3 class="text-center">2023 Cars//</h3>
+  </div>
+
+<div class="row shadow-lg mb-5 rounded">
+  <div class="row pb-3 mx-auto mb-5">
+      <div class="col-lg-3 mt-3">
+          <div class="card mx-auto" >
+              <div id="carouselControls-1" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselControls-1" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselControls-1" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselControls-1" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/1Cars/g-class-1view.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/g-class-2.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/g-class-3.webp" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Mercedes G-class</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 40.90 - 47.38 Lakh <em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>G-Class</p>
+              <p class="card-text m-0"><b>Milage - </b>12.6 to 14.6 kmpl</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-lg-3 mt-3">
+        <div class="card mx-auto">
+            <div id="carouselControls-2" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselControls-2" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselControls-2" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselControls-2" data-bs-slide-to="2"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/img/1Cars/comet-ev-1.webp" class="d-block">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/1Cars/comet-ev-2.webp" class="d-block">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/1Cars/comet-ev-3.webp" class="d-block">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">MG Comet</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 8.10 - 9.38 Lakh <em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>EV</p>
+              <p class="card-text m-0"><b>Milage - </b>130 KM in One Charge</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+            </div>
+         </div>
+      </div>
+
+      <div class="col-lg-3 mt-3">
+        <div class="card mx-auto">
+            <div id="carouselControls-3" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+  
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselControls-3" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselControls-3" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselControls-3" data-bs-slide-to="2"></button>
+              </div>
+  
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/img/1Cars/fronx-exterior-1.webp" class="d-block">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/1Cars/fronx-exterior-2.webp" class="d-block">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/1Cars/fronx-exterior-3.webp" class="d-block">
+                </div>
+              </div>
+            </div>
+             <div class="card-body">
+              <h5 class="card-title text-center">Maruti Fronyx</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 14.40 - 17.88 Lakh <em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>VXI 2.6</p>
+              <p class="card-text m-0"><b>Milage - </b>18.6 to 20.6 kmpl</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+             </div>
+        </div>
+      </div>
+
+    <div class="col-lg-3 mt-3">
+      <div class="card mx-auto" >
+          <div id="carouselControls-4" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+  
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselControls-4" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#carouselControls-4" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carouselControls-4" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/img/1Cars/taigun-exterior-1.webp" class="d-block">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/1Cars/taigun-interior-2.webp" class="d-block">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/1Cars/volkswagen-taigun-3.webp" class="d-block">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Volksawagen Tigun</h5><hr>
+            <p class="card-text m-0"><b>Price - </b>Rs. 11.90 - 13.38 Lakh <em>Ex.Showroom</em></p>
+            <p class="card-text m-0"><b>Mode - </b>EX 1.6 VT</p>
+            <p class="card-text m-0"><b>Milage - </b>19.6 to 22.6 kmpl</p>
+            <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <div class="row mx-auto carsborder-2">
+      <div class="col-lg-3 mt-2">
+          <div class="card mx-auto" >
+              <div id="carouselControls-5" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselControls-5" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselControls-5" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselControls-5" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/1Cars/innova-crysta-1.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/innova-crysta-2.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/innova-crysta-3.webp" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Inova Crysta</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 16.90 - 22.38 Lakh <em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>2.6 VT</p>
+              <p class="card-text m-0"><b>Milage - </b>14.6 to 17.6 kmpl</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-lg-3 mt-2">
+        <div class="card mx-auto">
+            <div id="carouselControls-6" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselControls-6" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselControls-6" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselControls-6" data-bs-slide-to="2"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/img/1Cars/safari-exterior-1.webp" class="d-block">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/1Cars/safari-exterior-2.webp" class="d-block">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/1Cars/safari-exterior-3.webp" class="d-block">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Tata Ssfari</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 12.40 - 14.3 Lakh <em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>L GEAR</p>
+              <p class="card-text m-0"><b>Milage - </b>18.5 to 22.7 kmpl</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+            </div>
+         </div>
+      </div>
+
+      <div class="col-lg-3 mt-2">
+        <div class="card mx-auto">
+            <div id="carouselControls-7" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+  
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselControls-7" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselControls-7" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselControls-7" data-bs-slide-to="2"></button>
+              </div>
+  
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/img/1Cars/venue-n-1.webp" class="d-block">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/1Cars/venue-n-2.webp" class="d-block">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/1Cars/venue-n-3.webp" class="d-block">
+                </div>
+              </div>
+            </div>
+             <div class="card-body">
+              <h5 class="card-title text-center">Hyundai Venu</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 7.40 - 9.26 Lakh <em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>1.2 VT</p>
+              <p class="card-text m-0"><b>Milage - </b>19.6 to 21.6 kmpl</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+             </div>
+        </div>
+      </div>
+
+    <div class="col-lg-3 mt-2">
+      <div class="card mx-auto" >
+          <div id="carouselControls-8" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+  
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselControls-8" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#carouselControls-8" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carouselControls-8" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/img/1Cars/alcazar-exterior-3.webp" class="d-block">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/1Cars/alcazar-exterior-2.webp" class="d-block">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/1Cars/alcazar-exterior-1.webp" class="d-block">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Hundai Alcazar</h5><hr>
+            <p class="card-text m-0"><b>Price - </b>Rs. 10.90 - 17.38 Lakh <em>Ex.Showroom</em></p>
+            <p class="card-text m-0"><b>Mode - </b>EX 1.6 VT</p>
+            <p class="card-text m-0"><b>Milage - </b>18.6 to 20.6 kmpl</p>
+            <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+          </div>
+      </div>
+    </div> 
+  </div>
+  <div class="row d-flex justify-content-end my-2 p-0">
+    <div class="newsbtn">
+     <a href="/CarsPG1.html"><button class="button" href style="vertical-align:middle"><span>More Cars </span></button></a>
+     </div>
+  </div>
+</div>
+</div>
+
+<!-- Trending Cars Ends-->
+
+<!-- Website Review's Section starts -->
+
+<div class="container">
+  <div class="row">
+    <div class="slideshow-container">
+      <h2 class="text-center">Website Review's</h2><br><br>
+      <p class="text-center">
+        <a href="#">
+          <img src="/img/logo.png" alt="">
+        </a>
+      </p>
+
+      <div class="mySlides">
+        <p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half"></i>
+        </p>        
+        <q>This is The Best Website in tech World I had Ever Seen</q>
+        <p class="author">- John Keats</p>
+      </div>
+      
+      <div class="mySlides">
+        <p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </p>
+        <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+        <p class="author">- Ernest Hemingway</p>
+      </div>
+      
+      <div class="mySlides">
+        <p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </p>
+        <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+        <p class="author">- Thomas A. Edison</p>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+      
+
+  </div>
+</div>
+
+<!-- Website Review's Section starts -->
+
+<!-- Car Types Section Starts-->
+
+<!-- Sedans -->
+
+<div class="container-fluid mt-5 p-5">
+  <h2 class="text-start">Popular Sedan's</h2>
+  <hr>
+  <div class="row">
+    <div class="col-lg-3 mt-3">
+          <div class="card mx-auto carhvr" >
+              <div id="carouselControls-9" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselControls-9" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselControls-9" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselControls-9" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/1Cars/verna-1.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/verna2.jpeg" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/verna3.webp" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Hyundai Verna</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 10.90 - 17.38 Lakh <em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>EX 1.6 VT</p>
+              <p class="card-text m-0"><b>Milage - </b>18.6 to 20.6 kmpl</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+            </div>
+          </div>
+      </div>
+
+    <div class="col-lg-3 mt-3">
+          <div class="card mx-auto carhvr" >
+              <div id="carouselControls-10" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselControls-10" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselControls-10" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselControls-10" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/1Cars/honda-city-1.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/honda-city-2.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/city-exterior-3.webp" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Honda City</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 12.90 - 27.38 Lakh <em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>GT 700</p>
+              <p class="card-text m-0"><b>Milage - </b>14.6 to 17.6 kmpl</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+            </div>
+          </div>
+      </div>
+
+    <div class="col-lg-3 mt-3">
+          <div class="card mx-auto carhvr" >
+              <div id="carouselControls-11" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselControls-11" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselControls-11" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselControls-11" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/1Cars/virtus-1.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/virtus-2.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/virtus-3.webp" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Volkswagon Vertus</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 8.10 - 12.28 Lakh <em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>HMJ-5</p>
+              <p class="card-text m-0"><b>Milage - </b>21.6 to 24.7 kmpl</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-lg-3 mt-3">
+          <div class="card mx-auto carhvr" >
+              <div id="carouselControls-12" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselControls-12" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselControls-12" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselControls-12" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/1Cars/volvo-1.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/exterior-rear-view.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/volvo-3.webp" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Volvo S90</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 90.90 - 95.38 Lakh <em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>S90</p>
+              <p class="card-text m-0"><b>Milage - </b>42.6 to 45.6 kmpl</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+            </div>
+          </div>
+      </div>
+  </div>
+  <div class="row d-flex justify-content-end mt-2">
+    <div class="newsbtn">
+     <a href="/CarsPG1.html"><button class="button" href style="vertical-align:middle"><span>More Cars </span></button></a>
+     </div>
+  </div>
+</div>
+
+<!-- <div id="myDIV" class="container-fluid px-5">
+  <div class="row">
+    <div class="col-lg-3 mt-3">
+          <div class="card mx-auto" >
+              <div id="carouselControls-9" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselControls-9" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselControls-9" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselControls-9" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://picsum.photos/id/50/600/400" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/id/60/700/400" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/id/70/500/400" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+      </div>
+
+    <div class="col-lg-3 mt-3">
+          <div class="card mx-auto" >
+              <div id="carouselControls-10" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselControls-10" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselControls-10" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselControls-10" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://picsum.photos/id/50/600/400" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/id/60/700/400" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/id/70/500/400" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+      </div>
+
+    <div class="col-lg-3 mt-3">
+          <div class="card mx-auto" >
+              <div id="carouselControls-11" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselControls-11" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselControls-11" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselControls-11" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://picsum.photos/id/50/600/400" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/id/60/700/400" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/id/70/500/400" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-lg-3 mt-3">
+          <div class="card mx-auto" >
+              <div id="carouselControls-12" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselControls-12" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselControls-12" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselControls-12" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://picsum.photos/id/50/600/400" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/id/60/700/400" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/id/70/500/400" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+      </div>
+  
+ </div>
+</div>
+  
+<div class=" d-flex align-items-end flex-column">
+  <button class="mx-5 mt-2" onclick="myFunction()" style="width: 130px; height: 30px;border-radius: 5px;background-color: red;">Show More ></button> 
+<script>
+function myFunction() {
+var x = document.getElementById("myDIV");
+if (x.style.display === "none") {
+  x.style.display = "block";
+} else {
+  x.style.display = "none";
+}
+}
+</script>
+</div> -->
+
+<!-- Suv's -->
+<div class="container-fluid px-5 py-1">
+  <h2 class="text-start">Popular SUV's</h2><hr>
+  <div class="row">
+    <div class="col-lg-3 mt-3">
+          <div class="card mx-auto carhvr" >
+              <div id="carouselContols-9" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselContols-9" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselContols-9" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselContols-9" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/1Cars/fortuner-1.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/fortuner-2.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/fortuner-3.webp" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Toyota Fortuner</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 32.98 - 50.74 Lakh <em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>E4*4 AMT 4.2 </p>
+              <p class="card-text m-0"><b>Milage - </b>10.2 to 14.6 kmpl</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+            </div>
+          </div>
+      </div>
+
+    <div class="col-lg-3 mt-3">
+          <div class="card mx-auto carhvr" >
+              <div id="carouselContols-10" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselContols-10" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselContols-10" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselContols-10" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/1Cars/xuv700-1.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/xuv700-2.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/xuv700-3.webp" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Mahindra XUV700</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 17.90 - 21.38 Lakh <em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>2.4 MT</p>
+              <p class="card-text m-0"><b>Milage - </b>16.6 to 216.4 kmpl</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+            </div>
+          </div>
+      </div>
+
+    <div class="col-lg-3 mt-3">
+          <div class="card mx-auto carhvr" >
+              <div id="carouselContols-11" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselContols-11" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselContols-11" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselContols-11" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/1Cars/thar-1.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/thar-2.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/thar-3.webp" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Mahindra THAR</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 18.90 - 24.38 Lakh <em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>4*4 MT</p>
+              <p class="card-text m-0"><b>Milage - </b>10.4 to 12.7 kmpl</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-lg-3 mt-3">
+          <div class="card mx-auto carhvr" >
+              <div id="carouselContols-12" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselControl-12" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselControl-12" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselControl-12" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/1Cars/Land-Rover-1.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/landrover-range-2.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/landrover-range-3.webp" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Range Rover VELAR</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 80.77 - 99.55 Lakh <em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>SR-DYNAMIC 2.0 Petrol</p>
+              <p class="card-text m-0"><b>Milage - </b>7.2 to 8.2 kmpl</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+            </div>
+          </div>
+      </div>
+  </div>
+  <div class="row d-flex justify-content-end mt-2">
+    <div class="newsbtn">
+     <a href="/CarsPG1.html"><button class="button" href style="vertical-align:middle"><span>More Cars </span></button></a>
+     </div>
+  </div>
+</div>
+
+<!-- EV's -->
+
+<div class="container-fluid p-5">
+  <h2 class="text-start">Popular EV's</h2><hr>
+  <div class="row">
+    <div class="col-lg-3 mt-3">
+          <div class="card mx-auto carhvr" >
+              <div id="carouselControls-13" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselControls-13" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselControls-13" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselControls-13" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/1Cars/jaguar1.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/jaguar2.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/jaguar3.webp" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Jaguar I-Pace</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 1.20 - 1.5 Cr. <em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>SE Electric</p>
+              <p class="card-text m-0"><b>Top Speed - </b>210 KMPH</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+            </div>
+          </div>
+      </div>
+
+    <div class="col-lg-3 mt-3">
+          <div class="card mx-auto carhvr" >
+              <div id="carouselControls-14" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselControls-14" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselControls-14" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselControls-14" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/1Cars/audi-e-1.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/audi-e-2.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/audi-e-3.webp" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">RAudi e-tron</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 1.0 - 1.2 Cr. <em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>STR Electric</p>
+              <p class="card-text m-0"><b>Top Speed - </b>245-275 KMPH</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+            </div>
+          </div>
+      </div>
+
+    <div class="col-lg-3 mt-3">
+          <div class="card mx-auto carhvr" >
+              <div id="carouselControls-15" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselControls-15" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselControls-15" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselControls-15" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/1Cars/taycan-cross-1.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/taycan-cross-2.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/taycan-cross-3.webp" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Porsche Taycan Cross</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 2.10 - 2.5 Cr.<em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>4S Electric</p>
+              <p class="card-text m-0"><b>Top Speed - </b>275-310 KMPH</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-lg-3 mt-3">
+          <div class="card mx-auto carhvr" >
+              <div id="carouselControls-16" class="carousel carousel-t slide card-img-top" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselControls-16" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselControls-16" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carouselControls-16" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/1Cars/i7-exterior-1.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/i7-exterior-2.webp" class="d-block">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/1Cars/i7-exterior-3.webp" class="d-block">
+                  </div>
+                </div>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">BMW i7</h5><hr>
+              <p class="card-text m-0"><b>Price - </b>Rs. 1.95 Cr. <em>Ex.Showroom</em></p>
+              <p class="card-text m-0"><b>Mode - </b>XT-97</p>
+              <p class="card-text m-0"><b>Top Speed - </b>265 KMPH</p>
+              <a href="/VWcar.html"><button class="button-2 mx-auto" href style="vertical-align:middle"><span>More Info </span></button></a>
+            </div>
+          </div>
+      </div>
+  </div>
+  <div class="row d-flex justify-content-end mt-2">
+    <div class="newsbtn">
+     <a href="/CarsPG1.html"><button class="button" href style="vertical-align:middle"><span>More Cars </span></button></a>
+     </div>
+  </div>
+  <!-- <br><hr> -->
+</div>
+
+<!-- car Types section ends -->
+
+<!-- Car News Section Starts -->
+
+<h3 class="text-center mt-3 mb-3">News//</h3><hr>
+<div class="row col-lg-12 px-5">
+    <div class="newsbox-1 p-2 mt-2 col-lg-6 col-xs-12">
+        <div class="newsbox-2">
+            <img src="/img/news1.avif"> 
+        </div>
+        <div class="newstext">
+            <b>Upping The Coolness Quotient Quite Literally: Cars With Dual Zone Climate Control Under Rs 30 Lakh :-</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nulla,
+                 nostrum blanditiis sed reiciendis velit, amet earum, porro officia
+                 quidem debitis ratione ut.</p>
+                 <a href="/News1.html">Read More >></a>
+        </div>
+    </div>
+    
+    <div class="newsbox-1 p-2 mt-2 col-lg-6 col-xs-12">
+        <div class="newsbox-2">
+            <a href="#"><img src="/img/news2.avif"></a> 
+        </div>
+        <div class="newstext">
+            <b>Car News That Mattered This Week (July 10-14): New Launches And Updates, Spy Shots Of Upcoming Cars And More :-</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nulla,
+                 nostrum blanditiis sed reiciendis velit, amet earum, porro officia
+                 quidem debitis ratione ut.</p>
+                 <a href="/News1.html">Read More >></a>
+        </div>
+    </div>
+</div>
+
+<div class="row col-lg-12 px-5">
+    <div class="newsbox-1 p-2 mt-2 col-lg-6 col-xs-12">
+        <div class="newsbox-2">
+            <img src="/img/news3.avif"> 
+        </div>
+        <div class="newstext">
+            <b>2023 BMW X5 Facelift Launched At Rs 93.90 Lakh :-</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nulla,
+                 nostrum blanditiis sed reiciendis velit, amet earum, porro officia
+                 quidem debitis ratione ut.</p>
+                 <a href="/News2.html">Read More >></a>
+        </div>
+    </div>
+    
+    <div class="newsbox-1 p-2 mt-2 col-lg-6 col-xs-12">
+        <div class="newsbox-2">
+            <img src="/img/news4.avif"> 
+        </div>
+        <div class="newstext">
+            <b>Citroen C3 Scores 0 Stars In Latin NCAP Crash Tests :-</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nulla,
+                 nostrum blanditiis sed reiciendis velit, amet earum, porro officia
+                 quidem debitis ratione ut.</p>
+                 <a href="/News1.html">Read More >></a>
+        </div>
+    </div>
+</div>
+<div class="row d-flex justify-content-end mt-2 mb-5 me-4">
+ <div class="newsbtn">
+  <a href="/morenewsPG1.html"><button class="button" href style="vertical-align:middle"><span>More News </span></button></a>
+  </div>
+</div>
+<hr class="mt-5">
+
+<!-- Car News Section Ends -->
+
+
+<!-- Footer section Starts -->
+<div class="row col-lg-12">
+  <div class="col-lg-3 box-1">
+      <div class="box-2">
+          <img src="/img/trusted.png" alt="">
+      </div>
+      <div class="text ps-1">
+          <h4 class="mb-0">100% Trusted</h4>
+          <p>Our News's Are Always Accurate <br> And Come's from trusted Sources loermmm</p>
+      </div>
+  </div>
+  <div class="col-lg-3 box-1">
+      <div class="box-2">
+          <img src="/img/locked.png" alt="">
+      </div>
+      <div class="text ps-1">
+          <h4 class="mb-0">100% Secure</h4>
+          <p>Our Website is Certified by Top End <br> Developer Team
+              and it's Compleatly Secure
+          </p>
+      </div>
+  </div>
+  <div class="col-lg-3 box-1">
+      <div class="box-2">
+          <img src="/img/security.png" alt="">
+      </div>
+      <div class="text ps-1">
+          <h4 class="mb-0">100% Safe</h4>
+          <p>We Keep Your Data Private <br> Lorem ipsum dolor sit amet consecr ametr.</p>
+      </div>
+  </div>
+  <div class="col-lg-3 box-1">
+      <div class="box-2">
+          <img src="/img/fast.png" alt="">
+      </div>
+      <div class="text ps-1">
+          <h4 class="mb-0">100% Fast</h4>
+          <p>Lorem ipsum dolor sit, amet consect <br>etur adipisicing 
+              elit. Architecto debitis ddc</p>
+      </div>
+  </div>
+</div>
+
+<footer>
+  <div class="row px-3 pt-3" style=" background-color: aliceblue;">
+      <div class="col-lg-3 listt">            
+          <ul>
+              <th><a class="text-center" href="/Workprogress.html"><h5>More Services</h5></a></th><hr>
+              <li><a href="/Workprogress.html"><p>Insurance's</p></a></li>
+              <li><a href="/Workprogress.html"><p>Car Modification</p></a></li>
+              <li><a href="/Workprogress.html"><p>Car Maintainance</p></a></li>
+              <li><a href="/Workprogress.html"><p>Vehicle Finance</p></a></li>
+              <li><a href="/Workprogress.html"><p>Vehicle Registration</p></a></li>
+          </ul>
+      </div>
+
+      <div class="col-lg-3 listt">            
+          <ul>
+              <th><a class="text-center" href="/Workprogress.html"><h5>Support</h5></a></th><hr>
+              <li><a href="/Workprogress.html"><p>Legal Policy</p></a></li>
+              <li><a href="/Workprogress.html"><p>Status Policy</p></a></li>
+              <li><a href="/Workprogress.html"><p>Privacy Policy</p></a></li>
+              <li><a href="/Workprogress.html"><p>Terms & Conditiond</p></a></li>
+          </ul>
+      </div>
+
+      <div class="col-lg-3 listt">            
+          <ul>
+              <th><a class="text-center" href="/Workprogress.html"><h5>About Us</h5></a></th><hr>
+              <li><a href="/Workprogress.html"><p>Blogs</p></a></li>
+              <li><a href="/Workprogress.html"><p>Answers</p></a></li>
+              <li><a href="/Workprogress.html"><p>Reach Us</p></a></li>
+              <li><a href="/Workprogress.html"><p>Our Team</p></a></li>
+              <li><a href="/Workprogress.html"><p>Way of Work!</p></a></li>
+          </ul>
+      </div>
+
+      <div class="col-lg-3 listt fttext">
+          <a href="/index.html">
+              <img src="/img/footerCAR.png" height="170">
+          </a>
+          <div>
+              <h5 class="m-0">Social</h5><hr class="mx-auto mb-2" style="width: 50%;">
+              <a href="https://github.com/"><img src="/img/git.png"></a>
+              <a href="https://www.google.com/"><img src="/img/googel.png" width="43"></a>
+              <a href="https://twitter.com/"><img src="/img/tw.png" width="38"></a>
+              <a href="https://www.instagram.com/"><img src="/img/ins.png" width="32"></a>
+          </div>
+      </div>
+      
+      <hr class="m-0">
+        <div class="col-lg-12 fttext" style="height: 43px;line-height: 38px; background-color: aliceblue;">
+             <p>Since 2021-2023 | All Rigth's Reserved By ABC</p>
+        </div>
+      <!-- <hr class="m-0"> -->
+
+  </div>
+</footer>
+
+<!-- Footer Section Ends -->
+
+
 </body>
 </html>

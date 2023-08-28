@@ -1,162 +1,507 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    /* box-sizing: border-box; */
-    /* float: left; */
- }
- 
- body{
-     /* background-color: #1a1a1d; */
- }
- 
- .spextext{
-     line-height: 10px;
- }
- 
- .spextext h6{
-    color: gray;
-    font-size: 13px;
- }
- 
- nav{
-     /* height: 75px; */
-     box-sizing: border-box;
-     /* position:none; */
-     /* color: red; */
- }
- 
- .nav a{
-     color: red;
- }
- 
- .logo{
-     height: 65px;
-     width: 248px;
-     /* text-align: center; */
-     float: left;
- }
- 
- .logo img{
-     /* width: 100% !important; */
-     /* height: 100% !important; */
- }
- 
- .nav{
-     background-color: #f2f1ef;
-     height: 65px;
-     border-radius: 59px;
-     box-sizing: border-box;
-     /* margin: 10px; */
-     /* width: 100%; */
- }
- 
- /* ff */
- @media only screen and (max-width: 768px) {
-     /* For mobile phones: */
-     #navA{
-         display: none;
-     }
-     .dot{
-         display: none;
-     }
-   }
- 
- @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
- * {
-   margin: 0;
-   padding: 0;
-   -webkit-box-sizing: border-box;
-   box-sizing: border-box;
- }
- 
- .navMenu {
-     
-   /* position: absolute; */
-   /* top: 50px; */
-   /* left: 70%; */
-   /* background-color: red; */
-   /* -webkit-transform: translate(-40%, -50%); */
-   /* transform: translate(-40%, -50%); */
- }
 
-.navMenu ul li{
-    background-color: #0d1128;
-    list-style-type: none;
-    float: right;
-    padding: 0px 16px 0px 16px;
-    font-size: 14px;
-    line-height: 60px;
+*{
+   padding: 0px;
+   margin: 0px;   
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
- 
- #navA {
-     /* margin-top: 10px; */
-   line-height: 60px;
-   align-items: center;
-   color: #5b605edc;
-   text-decoration: none;
-   font-size: 1.2em;
-   text-transform: uppercase;
-   font-weight: 500;
-   /* display: inline-block; */
-   width: auto;
-   -webkit-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out;
- }
- 
- #navB a {
-     align-items: end;
- }
- 
- #navA:hover {
-   color: #908448;
- }
- 
- .navMenu .dot {
-   width: 65px;
-   height: 5px;
-   margin-top: 30px;
-   background: #f9d10d;
-   border-radius: 5px;
-   opacity: 1 ;
-   -webkit-transform: translateX(30px);
-   transform: translateX(-51px);
-   -webkit-transition: all 0.2s ease-in-out;
-   transition: all 0.3s ease-in-out;
- }
- 
- .navMenu a:nth-child(2):hover ~ .dot {
-   -webkit-transform: translateX(-5px);
-   transform: translateX(-5px);
-   -webkit-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out;
-   opacity: 1;
- }
- 
- .navMenu a:nth-child(3):hover ~ .dot {
-   -webkit-transform: translateX(75px);
-   transform: translateX(75px);
-   -webkit-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out;
-   opacity: 1;
- }
- 
- .navMenu a:nth-child(4):hover ~ .dot {
-   -webkit-transform: translateX(165px);
-   transform: translateX(165px);
-   -webkit-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out;
-   opacity: 1;
- }
- 
- .navMenu a:nth-child(5):hover ~ .dot {
-   -webkit-transform: translateX(250px);
-   transform: translateX(250px);
-   -webkit-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out;
-   opacity: 1;
- }
- /* ff */
- 
- .featured{
-     /* text-align: center; */
- }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .navMenu{
+      display: none !important;
+    }
+    .newsbox-1{
+        display: inline !important;
+        text-align: center;
+    }
+    .button-2{
+      background-color: #b52b40 !important;
+      opacity: 1 !important;
+    }
+  }
+
+@media only screen and (min-width: 768px){
+  .toggle-btn{
+    display: none;
+  }
+  .dropdown_menu{
+    display: none;
+  }
+}
+
+/* NavBar Starts  */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.heading{
+  margin-top: 120px;
+}
+
+.logo{
+    height: 65px;
+    width: 248px;
+    text-align: center;
+}
+
+/* .logo img{
+    width: 100% !important;
+    height: 100% !important;
+} */
+
+.navMenu a {
+  line-height: 61px;
+  color: #5b605edc;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: 25px;
+  /* width: auto; */
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #908448;
+}
+
+.navMenu .dot {
+  width: 65px;
+  height: 5px;
+  margin-top: 47px;
+  background: #f9d10d;
+  border-radius: 5px;
+  opacity: 1 ;
+  -webkit-transform: translateX(-298px);
+  transform: translateX(-298px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* .navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(-298px);
+  transform: translateX(-298px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+} */
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(-222px);
+  transform: translateX(-222px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  /* width: 100px; */
+  -webkit-transform: translateX(-145px);
+  transform: translateX(-145px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(-65px);
+  transform: translateX(-65px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+  /* width: 72px; */
+}
+
+.toggle-btn{
+    /* color: #; */
+    font-size: 28px;
+    cursor: pointer;
+    
+}
+
+.dropdown_menu {
+    position: absolute;
+    right: 12px;
+    top: 70px;
+    height: 0px;
+    width: 180px;
+    background-color: whitesmoke;
+    box-shadow: 0px 12px 55px 5px #5b605edc;
+    backdrop-filter: blur(15px);
+    border-radius: 7px;
+    overflow: hidden;
+    transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu li{
+  list-style-type: none;
+  padding: 3px 0px 0px 15px;
+  height: 27px;
+  /* border-bottom:1px solid rebeccapurple; */
+  /* background-color: #908448; */
+  /* text-align: center; */
+}
+
+.dropdown_menu a{
+  text-decoration: none;
+  color: #5b605edc;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.dropdown_menu a:hover{
+  color: #b52b40;
+  font-size: 17px;
+  text-shadow: 0px 0px 12px #5b605edc;
+}
+
+.open{
+    height: 140px;
+}
+
+/* NavBar Ends */
+
+
+/* Upcoming Section starts */
+.Upcoming{
+  margin-top: 120px;
+}
+
+.spextext{
+    line-height: 10px;
+}
+
+.spextext h6{
+   color: gray;
+   font-size: 13px;
+}
+/* Upcomin Section ends */
+
+/* brands section starts*/
+
+.brands a{
+  width: 120px;
+  height: 100px;
+  margin: 10px;
+}
+
+.brands img{
+  width: 120px;
+}
+
+.brands img:hover{
+  width: 125px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* brands section end */
+
+/* Trending Cars section start */
+
+.carousel-t img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Trending Cars section ends*/
+
+/* Review Section Starts */
+
+         /* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: white;
+}
+
+         /* Slides */
+.mySlides {
+  display: none;
+  padding: 40px;
+  text-align: center;
+}
+
+         /* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+         /* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+         /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+         /* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+         /* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+         /* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+         /* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+         /* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+/* Review Section Ends */
+
+/* Car Type Section Starts */
+
+/* News Section Starts */
+
+.newsbox-1{  
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.newsbox-2 img{
+    height: 150px;
+}
+
+.newsbox-1:hover{
+  background-color: #d8d3d8;
+  box-shadow: 0px 0px 35px 1px #d8d3d8;
+  border-radius: 4px;
+}
+
+/* News Section Ends */
+
+/* .box1 h3{
+  margin: 0px;
+  padding: 0px;
+} */
+
+/* Footer Section Starts */
+/* more features starts */
+
+.box-1{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-2 img{
+    width: 60px;
+}
+
+.text p{
+  font-size: 12px;
+}
+
+/* more features ends */
+
+footer hr{
+    width: 90%;
+    margin: auto;
+}
+
+.fttext{
+    text-align: center;
+}
+
+.listt{
+    height: 290px;
+}
+
+.listt li{
+    list-style-type: none;
+    margin-left: 35px;
+    margin-top: 14px;
+    height: 28px;
+}
+
+.listt a{
+    text-decoration: none;
+    color: gray;
+}
+
+.listt li:hover{
+    color: rgb(169, 159, 159);
+    font-size: 17px;
+    text-shadow: 3px 2px 20px;
+    transition: all 0.1s ease-in-out;
+
+}
+
+/* Footer Section Ends */
+
+/* Button's Section Starts */
+
+/* Cars Btn STARTs */
+.button-2 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #d8b964;
+  opacity: 0.8;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 3px 3px 5px 3px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button-2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button-2:hover span {
+  padding-right: 15px;
+}
+
+.button-2:hover{
+  opacity: 1;
+}
+
+/* Cars Btn ENDs */
+
+/* RED STARTs */
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #b52b40;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 7px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* RED END  */
+
+/* NEWS Starts */
+.newsbtn{
+  width: auto;
+}
+/* NEWS END's */
+
+/* Button's Section Ends */
+/* About US */
+
+input{
+  width: 80%;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  margin-top: 15px;
+}
+
+textarea{
+  width: 80%;
+  margin-top: 20px;
+}
+
+.aboutb button{
+  width: 80%;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #d8b964;
+  opacity: 0.8;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 100px;
+}
+
+.aboutb button:hover{
+  opacity: 1;
+}
+/* About END */
